@@ -98,6 +98,7 @@ const CreateEditModal = (props) => {
     };
 
     const handleAddUser = () => {
+        debugger
         setUsersErrorArray(user => [...user, usersTableDataErrors])
         const index = usersDataTable.findIndex(item => item.email === userCreateData.email);
         if (!usersTableDataErrors.name.valid && !usersTableDataErrors.email.valid && !usersTableDataErrors.phone.valid) {
